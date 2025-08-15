@@ -10,10 +10,7 @@ It also assumes basic GitHub and general computer skills.
 
 ---
 
-## 📚 Curriculum
-
-**Day 0 – Repo Setup & VS Code Integration**  
-*Goal:* Prepare your GitHub repo and connect it to Visual Studio Code (VS Code) for easy version control.  
+## 📚 Curriculum 
 
 **Day 1 – ServiceNow (Incident Management)**  
 *Goal:* Learn how to work tickets like a NOC tech.  
@@ -39,39 +36,34 @@ It also assumes basic GitHub and general computer skills.
 ---
 
 ## 🛠 How to Use This Repo
-
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/StevenKearney/noc-skill-boost.git
-   cd noc-skill-boost
    
-## 2. Follow the Daily Labs
+## 1. Follow the Daily Labs
 
-Each day has its own folder (`Day00_Setup`, `Day01_ServiceNow`, etc.).
+Each day has its own folder (`Day01_ServiceNow`,`Day02_Zabbix` etc.).
 
 Inside, you’ll find:
 - **setup-notes.md** – instructions, references, and tips.  
 - **screenshots/** – visual proof of the work completed.  
-- **scripts/** – any Bash, CLI, or automation scripts.  
-- **docs/** – diagrams, IP plans, or other documentation.  
+- **scripts/** – any Bash, CLI, or automation scripts (if applicable).  
+- **docs/** – diagrams, IP plans, or other documentation (if applicable).  
 
 ---
 
-## 3. Work at Your Own Pace
+## 2. Work at Your Own Pace
 
 - The plan is designed for ~2 hours/day, but you can spread it out.  
 - You don’t need expensive hardware — a home lab or virtual lab works fine.  
 
 ---
 
-## 4. Stay Updated
+## 3. Stay Updated
 
 - This repo is a WIP and will be updated as I complete each day’s lab.  
 - Watch the repo on GitHub to get updates.  
 
 ---
 
-## 5. Disclaimer
+## 4. Disclaimer
 
 - Only monitor or log devices you own or have explicit permission to use.  
 - Sanitize any sensitive information before posting in a public repo.  
