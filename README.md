@@ -1,75 +1,60 @@
 # noc-skill-boost
 
-🚧 Work in Progress — actively updated as I complete each day’s lab.
+🚧 **Work in Progress** — actively updated as I complete each day’s lab.
 
-This is a **hands-on self-learning program** covering tools and workflows in **ServiceNow, Zabbix, Graylog**, CLI tools, Bash scripting, network diagramming, and IP planning.
+This is a **hands-on self-learning program** covering tools and workflows in **ServiceNow**, **Zabbix**, **Graylog**, CLI tools, Bash scripting, network diagramming, and IP planning.  
 
-🖥️ It’s **built for aspiring network professionals, by an aspiring network professional** — designed to provide practical, hands-on experience while sharing progress with others.
+🖥️ **Built for aspiring network professionals, by an aspiring network professional** — designed to provide practical, hands-on experience while sharing progress with others.  
 
-This is also my **first GitHub repository**, so I’ll be learning GitHub alongside the core lab topics.
+This is also my **first GitHub repository**, so I’ll be learning GitHub alongside the core lab topics.  
 
-💡 Have recommendations? Fork the repo and submit a pull request — contributions and suggestions are welcome!  
-
-📌 Course Assumptions  
-This course assumes fundamental knowledge of networking and will not go into details to keep it streamlined.  
-It also assumes basic GitHub and general computer skills.  
+💡 **Have recommendations?** Fork the repo and submit a pull request — contributions and suggestions are welcome!  
 
 ---
 
-## 📚 Curriculum 
-
-**Day 1 – ServiceNow (Incident Management)**  
-*Goal:* Learn how to work tickets like a NOC tech.  
-
-**Day 2 – Zabbix (Network Monitoring)**  
-*Goal:* Monitor a device with SNMP.  
-
-**Day 3 – Syslog & Log Analysis**  
-*Goal:* Collect logs from a network device.  
-
-**Day 4 – Remote Access Tools**  
-*Goal:* Comfortably use CLI access like in a NOC shift.  
-
-**Day 5 – Bash Scripting**  
-*Goal:* Automate a repetitive NOC check.  
-
-**Day 6 – Network Diagramming**  
-*Goal:* Document network topology like a NOC tech.  
-
-**Day 7 – IP Address Management**  
-*Goal:* Practice subnetting & quick IP planning.  
+## 📌 Course Assumptions
+- Fundamental knowledge of networking (no deep dives into basics to keep it streamlined)  
+- Basic GitHub usage and general computer skills  
 
 ---
 
-## 🛠 How to Use This Repo
-   
-## 1. Follow the Daily Labs
+## 📚 Curriculum  
 
-Each day has its own folder (`Day01_ServiceNow`,`Day02_Zabbix` etc.).
-
-Inside, you’ll find:
-- **setup-notes.md** – instructions, references, and tips.  
-- **screenshots/** – visual proof of the work completed.  
-- **scripts/** – any Bash, CLI, or automation scripts (if applicable).  
-- **docs/** – diagrams, IP plans, or other documentation (if applicable).  
-
----
-
-## 2. Work at Your Own Pace
-
-- The plan is designed for ~2 hours/day, but you can spread it out.  
-- You don’t need expensive hardware — a home lab or virtual lab works fine.  
+| Day | Topic | Goal |
+|-----|-------|------|
+| **1** | ServiceNow (Incident Management) | Learn how to work tickets like a NOC technician. |
+| **2** | Zabbix (Network Monitoring) | Monitor a device using SNMP. |
+| **3** | Syslog & Log Analysis | Collect and analyze logs from a network device. |
+| **4** | Remote Access Tools | Use CLI tools effectively during a NOC shift. |
+| **5** | Bash Scripting | Automate a repetitive NOC task. |
+| **6** | Network Diagramming | Document network topology in a professional format. |
+| **7** | IP Address Management | Practice subnetting and rapid IP planning. |
 
 ---
 
-## 3. Stay Updated
+## 🛠 How to Use This Repo  
 
-- This repo is a WIP and will be updated as I complete each day’s lab.  
-- Watch the repo on GitHub to get updates.  
+### **1. Follow the Daily Labs**  
+Each day has its own folder (`Day01_ServiceNow`, `Day02_Zabbix`, etc.) containing:  
+- **setup-notes.md** – instructions, references, and tips  
+- **screenshots/** – visual proof of completed work  
+- **scripts/** – Bash, CLI, or automation scripts (if applicable)  
+- **docs/** – diagrams, IP plans, or other documentation (if applicable)  
 
 ---
 
-## 4. Disclaimer
+### **2. Work at Your Own Pace**  
+- Designed for ~2 hours/day, but flexible to your schedule  
+- Works with a home lab or virtual lab — no expensive gear required  
 
-- Only monitor, access, or log devices you own or have explicit permission to use.  
-- Sanitize any sensitive information before posting in a public repo.  
+---
+
+### **3. Stay Updated**  
+- This repo is actively updated as each lab is completed  
+- Use GitHub’s **Watch** feature to get notifications on changes  
+
+---
+
+### **4. Disclaimer**  
+- Only monitor or log devices you own or have explicit permission to access  
+- Sanitize any sensitive information before adding it to the repo  
