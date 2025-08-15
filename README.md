@@ -5,30 +5,30 @@ This plan is designed for ~2 hours of study per day. I created this to supplemen
 
 This course assumes fundamental knowledge of networking and will not go into details to keep it streamlined.
 
-Curriculum
+Curriculum  
 
-  Day 0 – Repo Setup & VS Code Integration
-    Goal: Prepare your GitHub repo and connect it to Visual Studio Code (VS Code) for easy version control.
-  
-  Day 1 – ServiceNow (Incident Management)
-    Goal: Learn how to work tickets like a NOC tech.
+**Day 0 – Repo Setup & VS Code Integration**  
+Goal: Prepare your GitHub repo and connect it to Visual Studio Code (VS Code) for easy version control.  
 
-  Day 2 – Zabbix (Network Monitoring)
-    Goal: Monitor a device with SNMP.
+**Day 1 – ServiceNow (Incident Management)**  
+Goal: Learn how to work tickets like a NOC tech.  
 
-  Day 3 – Syslog & Log Analysis
-    Goal: Collect logs from a network device.
+**Day 2 – Zabbix (Network Monitoring)**  
+Goal: Monitor a device with SNMP.  
 
-  Day 4 – Remote Access Tools
-    Goal: Comfortably use CLI access like in a NOC shift.
+**Day 3 – Syslog & Log Analysis**  
+Goal: Collect logs from a network device.  
 
-  Day 5 – Bash Scripting
-    Goal: Automate a repetitive NOC check.
+**Day 4 – Remote Access Tools**  
+Goal: Comfortably use CLI access like in a NOC shift.  
 
-  Day 6 – Network Diagramming
-    Goal: Document network topology like a NOC tech.
+**Day 5 – Bash Scripting**  
+Goal: Automate a repetitive NOC check.  
 
-  Day 7 – IP Address Management
-    Goal: Practice subnetting & quick IP planning.
+**Day 6 – Network Diagramming**  
+Goal: Document network topology like a NOC tech.  
+
+**Day 7 – IP Address Management**  
+Goal: Practice subnetting & quick IP planning.  
 
   
