@@ -2,14 +2,15 @@
 
 🚧 Work in Progress — actively updated as I complete each day’s lab.
 
-This is a hands-on self-learning program covering tools and workflows in ServiceNow, Zabbix, Graylog, CLI tools, Bash scripting, network diagramming, and IP planning.
+This is a **hands-on self-learning program** covering tools and workflows in **ServiceNow, Zabbix, Graylog**, CLI tools, Bash scripting, network diagramming, and IP planning.
 
 🖥️ It’s **built for aspiring network professionals, by an aspiring network professional** — designed to provide practical, hands-on experience while sharing progress with others.
 
-This is also my first GitHub repository, so I’ll be learning GitHub alongside the core lab topics.
+This is also my **first GitHub repository**, so I’ll be learning GitHub alongside the core lab topics.
 
-💡 Have recommendations? Fork the repo and submit a pull request — contributions and suggestions are welcome!
+💡 Have recommendations? Fork the repo and submit a pull request — contributions and suggestions are welcome!  
 
+📌 Course Assumptions  
 This course assumes fundamental knowledge of networking and will not go into details to keep it streamlined.  
 It also assumes basic GitHub and general computer skills.  
 
@@ -70,5 +71,5 @@ Inside, you’ll find:
 
 ## 4. Disclaimer
 
-- Only monitor or log devices you own or have explicit permission to use.  
+- Only monitor, access, or log devices you own or have explicit permission to use.  
 - Sanitize any sensitive information before posting in a public repo.  
