@@ -5,8 +5,8 @@
 A hands-on self-learning program covering tools and workflows in **ServiceNow**, **Zabbix**, **Graylog**, CLI tools, Bash scripting, network diagramming, and IP planning.  
 Built for aspiring network professionals, by an aspiring network professional.  
 
-This plan is designed for ~2 hours of study per day. I created it to supplement studying for the **CCNA**.  
 This course assumes fundamental knowledge of networking and will not go into details to keep it streamlined.  
+It also assumes basic GitHub and general computer skills.  
 
 ---
 
