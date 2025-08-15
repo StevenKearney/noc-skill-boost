@@ -42,7 +42,7 @@ This course assumes fundamental knowledge of networking and will not go into det
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/YOUR-USERNAME/noc-skill-boost.git
+   git clone https://github.com/StevenKearney/noc-skill-boost.git
    cd noc-skill-boost
    
 ## 2. Follow the Daily Labs
