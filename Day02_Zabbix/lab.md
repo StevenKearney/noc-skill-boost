@@ -7,23 +7,23 @@ Last Updated: AUG-17-2025
 
 ## Goals for the day
 
-1. Download and set up Zabbix on Windows (Docker Desktop to make this more accessible)
-2. Add a device to Zabbix and monitor with ICMP (pings)
-3. Trigger an alert and see how Zabbix captures and displays the problem/event details
-4. Correct the cause of the alert, and verify revocery
-5. A short write-up of what I learned from this (see **summary.md** in today's folder)
+* Understand how to configure basic network monitoring and view alerts in Zabbix
+* Practice adding a host and linking a template
+* See an outage alert
+* Verify the outage was resolved
 
 ## What we'll accomplish
 
-1. Install Docker Desktop on Windows and run a Zabbix server locally
-2. Create a Zabbix host using the ICMP template
-3. Simulate an outage and observe the alert
-4. Record the event ID and the recovery details
+1. Download and set up Zabbix on Windows (Docker Desktop to make this more accessible)
+2. Add a host device to Zabbix and monitor with an ICMP (ping) template
+3. Simulate an outage and see how Zabbix captures and displays the problem/event details
+4. Correct the cause of the alert, and verify recovery
+5. A short write-up of what I learned from this (see **summary.md** in today's folder)
 
 ## Why this matters in a NOC
 
-* Gives us hands-on experience with an uptime monitor, congiguration, alerts, and recovry validation
-* Mirrors real network tools and allows us to investigae problems before they are reported
+* Gives us hands-on experience with an uptime monitor, configuration, alerts, and recovery validation
+* Mirrors real network tools and allows us to investigate problems before they are reported
 
 ## Lab steps
 
@@ -71,12 +71,13 @@ Last Updated: AUG-17-2025
             * Host path: **zbxdbdata**
             * Container path: **/var/lib/mysql**
     * Environment variables
-        * Variable: "**PHP_TZ**
-        * Value: "**America/New_York**" (can change if you know what yours is)
+        * Variable: **PHP_TZ**
+        * Value: **America/New_York** (can change if you know what yours is)
 * Click **Run**
     * This may take a moment to complete. It is setting up our Zabbix server
     * You do not need to wait for anything to happen to continue, try the next step and if it works, it's done
 * In a browser, navigate to **http://localhost:8080/**
+    * If it isn’t up yet, give it 60–120 seconds for the DB to initialize
 * This will take us to the Zabbix login page
     * Username: **Admin**
     * Password: **zabbix**
@@ -85,14 +86,14 @@ Last Updated: AUG-17-2025
     * You also may see an alert for Zabbix server, you can ignore it
 
 
-#### 2. Add a device to Zabbix and monitor with ICMP (pings)
+#### 2. Add a host device to Zabbix and monitor with an ICMP (ping) template
 
 * In Zabbix, navigate to **Configuration** -> **Hosts** -> **Create host** (top right corner)
     * Here we will configure a "router" using a public IP for training purposes
         * Host name: **Branch-RTR-01**
         * Groups: **Router (new)**
         * Agent interfaces
-            * IP address: **1.1.1.1** (this is an ip address used by Cloudflare, we are simply pinging it, so no harm here)
+            * IP address: **1.1.1.1** (this is an IP address used by Cloudflare, we are simply pinging it, so no harm here)
         * Just above **Host name**, navigate to **Templates** (make sure you are **NOT** choosing the option all the way at the top)
             * In the search field, type "**Template Module ICMP Ping**"
                 * Click on the matching template that appears
@@ -103,10 +104,10 @@ Last Updated: AUG-17-2025
         * Click Apply
         * We should now see successful pings (screenshots/latest-data.png)
 
-#### 3. Trigger an alert and see how Zabbix captures and displays the problem/event details
+#### 3. Simulate an outage and see how Zabbix captures and displays the problem/event details
 
 * Now we will simulate an outage
-    * We will do this by changing the IP address to a non-routable address. This it not something that would normally be done intentionally
+    * We will do this by changing the IP address to a non-routable address. This is not something that would normally be done intentionally
     * Navigate to **Configuration** -> **Hosts** -> **Branch-RTR-01** -> **Agent Interfaces**
         * We will change our IP address from **1.1.1.1** to something we cannot reach like **10.255.255.254**
         * Click **Update**
@@ -116,7 +117,7 @@ Last Updated: AUG-17-2025
             * This may take a few minutes to be picked up as an issue within Zabbix
         * After some time, we should be alerted of the issue (screenshots/alert.png)
 
-#### 4. Correct the cause of the alert, and verify revocery
+#### 4. Correct the cause of the alert, and verify recovery
 
 * You should now see the alert, and we can resolve it
     * Navigate to **Configuration** -> **Hosts** -> **Branch-RTR-01**-> **Agent Interfaces**
@@ -125,7 +126,7 @@ Last Updated: AUG-17-2025
 * We will now verify the problem is resolved
     * Navigate to **Monitoring** -> **Problems**
         * Here we should see the **Status** is "**RESOLVED**"
-        * We can click the time stamp under "**Time**" to view more information about the event (screenthost/resolved.png)
+        * We can click the time stamp under "**Time**" to view more information about the event (screenshots/resolved.png)
 * Now that we see the problem is resolved, we can do a manual verification
     * Navigate to **Monitoring** -> **Latest data**
         * In the **Hosts** search, type "**Branch-RTR-01**" and select it (if not already populated)

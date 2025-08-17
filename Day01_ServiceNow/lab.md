@@ -1,24 +1,23 @@
 🏁 Completed
 
 Created: AUG-16-2025  
-Last Updated: AUG-16-2025
+Last Updated: AUG-17-2025
 
 # Day 1 — ServiceNow (Incident Management)
 
 ## Goals for the day
 
-1. Spin up a free ServiceNow Personal Developer Instance (PDI)
-2. View simulated incidents and create a new one
-3. Work through the incident like a NOC technician
-4. See SLAs in action (built-in timers, no custom configuration)
-5. A short write-up of what I learned from this (see **summary.md** in today's folder)
+* Get hands-on practice with ServiceNow
+* Practice creating and working an incident from start to finish
+* See how **Impact/Urgency** influences **Priority** and SLAs
 
 ## What we'll accomplish
 
-1. Set up a ServiceNow developer account and open your PDI
-2. Create a realistic **Incident** with a caller
-3. Set **Impact/Urgency** so **Priority** auto-calculates
-4. Work the ticket from start to finish: **New -> In Progress -> On Hold -> Resolved -> Closed**
+1. Spin up a free ServiceNow Personal Developer Instance (PDI)2
+2. View simulated **incidents** and create a new one
+3. Work the ticket from start to finish: **New -> In Progress -> On Hold -> Resolved -> Closed**
+4. See SLAs in action
+5. A short write-up of what I learned from this (see **summary.md** in today's folder)
 
 ## Why this matters in a NOC
 
@@ -45,8 +44,8 @@ Last Updated: AUG-16-2025
 
 * Now we will simulate creating a case from a caller
     * From the main page, click the "**New**" button in the top right corner
-        * This will open the "**Incident - Create**" page (screenshot **"Create-Incident.png**")
-            * This page shows us the basic information about the issue, such as the **Incident Number** (auto generated), the **caller**, a **description** of the issue, who the incident is **assigned to**, and other information
+        * This will open the "**Incident - Create**" page (screenshots/**Create-Incident.png**)
+            * This page shows us the basic information about the issue, such as the **Incident Number** (auto-generated), the **caller**, a **description** of the issue, who the incident is **assigned to**, and other information
         * For our example, **Bryan Rovell** is calling in to report his office has lost internet connectivity (Screenshots/**Incident-Filled-Out**)
             * We will put his name into the "**Caller**" field. This should find his name and allow us to select it
             * Bryan states he lost internet access
@@ -55,7 +54,7 @@ Last Updated: AUG-16-2025
                 * **Category**: Network
                 * **Impact**: Medium
                 * **Urgency**: High
-                    * Notice the **Priority** field auto updated to "**2 - High**" based on our **Impact** and **Urgency** selections
+                    * Notice the **Priority** field auto-updated to "**2 - High**" based on our **Impact** and **Urgency** selections
                 * **Configuration item**: Branch-RTR-01 (for this example, but it will not work because it isn't valid in this test environment)
                 * **Short description**: Branch Router Down - packet loss 100%
                 * **Description**: 
@@ -78,7 +77,7 @@ Last Updated: AUG-16-2025
                 * New
                     * This is the default state for new incidents awaiting triage or ownership
                     * **SLA response** timer begins
-                    * Work note: Acknowledged issue, p2 based on impact
+                    * Work note: Acknowledged issue, P2 based on impact
                 * In Progress
                     * Someone is working on the issue
                     * The **SLA resolution** timer runs while you are working
