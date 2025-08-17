@@ -35,7 +35,7 @@ This is also my **first GitHub repository**, so I’ll be learning GitHub alongs
 ## 🛠 How to Use This Repo  
 
 ### **1. Follow the Daily Labs**  
-Each day has its own folder (`Day01_ServiceNow`, `Day02_Zabbix`, etc.) containing:  
+Each day has its own files and folders (`Day01_ServiceNow`, `Day02_Zabbix`, etc.) containing:  
 - **notes.md** – instructions, references, and tips  
 - **screenshots/** – visual proof of completed work  
 - **scripts/** – Bash, CLI, or automation scripts (if applicable)  
