@@ -10,7 +10,9 @@
     🚧 Day 6
     🚧 Day 7
 
-This is a **hands-on self-learning program** covering tools and workflows in **ServiceNow**, **Zabbix**, **Graylog**, CLI tools, Bash scripting, network diagramming, and IP planning. Each day's topic is designed to be modular, so you pick and choose what you need to learn.  
+This is a **hands-on self-learning program** covering tools and workflows in **ServiceNow**, **Zabbix**, **Graylog**, CLI tools, Bash scripting, network diagramming, and IP planning. 
+
+Each day's topic is designed to be modular, so you can pick and choose what you need to learn.  
 
 🖥️ **Built for aspiring network professionals, by an aspiring network professional** — designed to provide practical, hands-on experience while sharing progress with others.  
 
