@@ -1,7 +1,7 @@
 🏁 Completed
 
 Created: AUG-17-2025  
-Last Updated: AUG-17-2025
+Last Updated: AUG-19-2025
 
 # Day 2 — Zabbix (Network Monitoring)
 
@@ -53,7 +53,9 @@ Last Updated: AUG-17-2025
         * Navigate to the **Images** tab on the left
             * You should now see the image we just pulled
 * Create a data volume
-    * 📌This step is optional but recommended if you intend to save any changes. Without this, you will lose everything you do in Zabbix when you restart the container or your PC.
+    * 📌This step is optional but recommended if you intend to save any changes. Without this, you will lose everything you do in Zabbix when you restart the container or your PC. 
+        * We are doing it this way to help familiarize users with the UI
+        * You can skip this and when specifying a volume in the container, it will auto-create one
     * Navigate to the **Volumes** tab on the left
         * Select **Create a Volume**
             * We will name it **zbxdbdata**
@@ -61,26 +63,30 @@ Last Updated: AUG-17-2025
     * Navigate back to the **Images** tab
 * Click **Run** (the play button) next to the image we just downloaded
 * Expand the **optional settings** (screenshot/optional-settings.png)
+
     * Container name: **zabbix-lab**
     * Ports
         * 10051:10051 (look on the right side of each field)
         * 0:443
         * 8080:80
-    * If we did the optional step of creating a data volume
+    * 📌 If we did the optional step of creating a data volume (or if you want to create the volume this way)
         * Volumes
-            * Host path: **zbxdbdata**
-            * Container path: **/var/lib/mysql**
+            * **Host path**: zbxdbdata
+            * **Container path**: /var/lib/mysql
     * Environment variables
-        * Variable: **PHP_TZ**
-        * Value: **America/New_York** (can change if you know what yours is)
+        * **Variable**: PHP_TZ
+        * **Value**: America/New_York (can change if you know what yours is)
 * Click **Run**
+
+* Note
     * This may take a moment to complete. It is setting up our Zabbix server
-    * You do not need to wait for anything to happen to continue, try the next step and if it works, it's done
+    * You do not need to wait for anything to happen to continue, try the next step and if it works, it's done    
+
 * In a browser, navigate to **http://localhost:8080/**
     * If it isn’t up yet, give it 60–120 seconds for the DB to initialize
-* This will take us to the Zabbix login page
-    * Username: **Admin**
-    * Password: **zabbix**
+* This will take us to the Zabbix login page (🚨reminder, not configured for security)
+    * **Username**: Admin
+    * **Password**: zabbix
 * Once logged in, we should see the **Dashboard** page (screenshots/zabbix-dashboard.png)
     * Please note I am using a dark mode extension, the default is a light theme
     * You also may see an alert for Zabbix server, you can ignore it
@@ -90,6 +96,7 @@ Last Updated: AUG-17-2025
 
 * In Zabbix, navigate to **Configuration** -> **Hosts** -> **Create host** (top right corner)
     * Here we will configure a "router" using a public IP for training purposes
+    
         * Host name: **Branch-RTR-01**
         * Groups: **Router (new)**
         * Agent interfaces
@@ -98,6 +105,7 @@ Last Updated: AUG-17-2025
             * In the search field, type "**Template Module ICMP Ping**"
                 * Click on the matching template that appears
         * Click **Add**
+    
     * Now we will test the "**router**" is functioning properly
         * Navigate to **Monitoring** -> **Latest data**
         * In the **Hosts** search, type "**Branch-RTR-01**" and select it
